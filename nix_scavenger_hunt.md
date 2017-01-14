@@ -87,32 +87,8 @@ Provides a dynamic real-time view of a running system
 credit_cards.txt                                                                          
 credit_cards2.txt  
 
-
 * Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?*
-38419076308558                                                                            
-5196941482180427                                                                          
-6011648902145507                                                                          
-6011541522810495                                                                          
-2100438118121208                                                                          
-340330340261288                                                                           
-201489234446831                                                                           
-4486721091429528                                                                          
-214921348106690                                                                           
-2100590354720042                                                                          
-4539858868193585                                                                          
-2100183923553803                                                                          
-4532777298371                                                                             
-346539747941995                                                                           
-2100687370647553                                                                          
-869913584571073                                                                           
-347621194459918                                                                           
-4532736972558173                                                                          
-1800681788742606                                                                          
-4024007195437                                                                             
-374000604532174                                                                           
-869950509948366                                                                           
---More--(2%)[Press space to continue, 'q' to quit.]  
-
+Last updated: 01-15-2015  
 
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
 ./tmp/modi_laboriosam.txt 
