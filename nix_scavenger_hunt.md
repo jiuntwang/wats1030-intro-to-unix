@@ -89,12 +89,67 @@ credit_cards2.txt
 
 
 * Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?*
+38419076308558                                                                            
+5196941482180427                                                                          
+6011648902145507                                                                          
+6011541522810495                                                                          
+2100438118121208                                                                          
+340330340261288                                                                           
+201489234446831                                                                           
+4486721091429528                                                                          
+214921348106690                                                                           
+2100590354720042                                                                          
+4539858868193585                                                                          
+2100183923553803                                                                          
+4532777298371                                                                             
+346539747941995                                                                           
+2100687370647553                                                                          
+869913584571073                                                                           
+347621194459918                                                                           
+4532736972558173                                                                          
+1800681788742606                                                                          
+4024007195437                                                                             
+374000604532174                                                                           
+869950509948366                                                                           
+--More--(2%)[Press space to continue, 'q' to quit.]  
+
+
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
+./tmp/modi_laboriosam.txt 
+
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). *How many files did you find?*
+2 files
+Britt-Erdman.user:O'Harachester, WA 37261                                                 
+Lissie-Strosin.user:Jewessfurt, WA 00816-7241    
+
+
 * Use the `-r` option of `grep` to *recursively* find the text "Waldo" hidden in a file somewhere under the `challenge_files` directory. *Paste the result showing the file and line where the word "Waldo" shows up.*
+serial-numbers/eaque_molestiae.txt:Ut est maiores quia autem. Nisi modi Waldo sed corporis
+ sit explicabo ut est. Et est placeat ea sunt sunt consectetur sunt incidunt. Explicabo ve
+l esse blanditiis dolorem culpa non quia.                 
 
 ### Pipes and Connecting Commands
 
 * Sometimes it's useful to output the results of a command to a text file for further analysis, reference, or processing. Try running `ls > files.txt`. Notice that the file `files.txt` was created. View that file using `more`. *What do you see in the `files.txt` file?*
+LICENSE                                                                                   
+README.md                                                                                 
+challenge_files                                                                           
+files.txt                                                                                 
+nix_scavenger_hunt.md                                                                     
+nix_scavenger_hunt_stretch.md 
+
+
 * Notice that if you run `ls -alh` in the `challenge_files` directory, the files scroll by very quickly. Sometimes it would be better to get the results in a paginated format. Try running `ls -alh | more`. *Describe what you see when you run `ls -alh | more`.*
+I see the results in chunks at a time, and I can press enter to see more of the result.
+
+
 * Earlier, when you viewed the list of active processes on your devbox using `ps aux`, the list was probably really long. You can make this list more manageable by using the pipe (`|`) to filter the results of `ps` using `grep`. Run `ps aux | grep <your_username>` to see what processes are running for your specific user. *Paste the list of processes that reference your username here:*
+root       431  0.0  0.6  63876  3304 ?        Ss   02:03   0:00 sshd: cabox [priv]       
+cabox      435  0.0  0.2  64008  1496 ?        S    02:03   0:00 sshd: cabox@notty        
+cabox      438  0.0  0.1  12916   964 ?        Ss   02:03   0:00 /usr/lib/openssh/sftp-ser
+ver                                                                                       
+root       492  0.0  0.6  63876  3460 ?        Ss   02:34   0:00 sshd: cabox [priv]       
+cabox      494  0.0  0.2  64008  1492 ?        S    02:34   0:00 sshd: cabox@pts/0        
+cabox      495  0.0  0.3  18132  2028 pts/0    Ss   02:34   0:00 -bash                    
+cabox      513  0.0  0.2  15520  1140 pts/0    R+   02:38   0:00 ps aux                   
+cabox      514  0.0  0.1   8816   744 pts/0    S+   02:38   0:00 grep --color=auto cabox
